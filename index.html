@@ -14,23 +14,25 @@
   </head>
   <body>
     <!-- SECTIONS -->
-    <section id="top" class="h-dvh w-dvw wlc-bg grid">
-      <div class="place-self-center w-fit md:flex md:gap-10 md:justify-center">
-        <svg class="h-40 md:h-50 aspect-832/753 shrink-0 text-almost-white max-md:-ml-1.75 max-md:mb-10">
+    <section id="top" class="wlc-bg grid h-dvh w-dvw">
+      <div class="w-fit place-self-center md:flex md:justify-center md:gap-10">
+        <svg
+          class="text-almost-white aspect-832/753 h-40 shrink-0 max-md:mb-10 max-md:-ml-1.75 md:h-50"
+        >
           <use href="./assets/branding.svg#logo" />
         </svg>
         <div class="md:place-self-end">
           <h1
-            class="text-4xl md:text-5xl text-balance text-almost-white font-title font-bold mb-6"
+            class="text-almost-white font-title mb-6 text-4xl font-bold text-balance md:text-5xl"
           >
             Montage met <br />
             oog voor detail.
           </h1>
           <a
-            class="p-2 pt-1 pr-3 pl-3 border-2 block w-fit text-very-light-blue text-2xl font-semibold"
+            class="text-very-light-blue block w-fit border-2 p-2 pt-1 pr-3 pl-3 text-2xl font-semibold"
             href="#services"
             >Contact
-            <svg class="w-0 h-0">
+            <svg class="h-0 w-0">
               <!-- MAKE AN ARROW SVG !! (TODO) -->
               <use href="./assets/branding.svg#arrow" />
             </svg>
@@ -40,12 +42,36 @@
       <!-- SCROLL ANIMATION AT THE BOTTOM (TODO) -->
     </section>
 
-    <nav class="bg-dark-navy text-very-light-blue">
-      <a href="#top" class="text-almost-white font-semibold">Home</a>
-      <a href="#services">Diensten</a>
-      <a href="#about">Over mij</a>
-      <a href="#how">Hoe werk ik</a>
-      <a href="#contact">Contact</a>
+    <!-- navbar -->
+    <nav class="bg-very-light-blue text-light-navy p-10 pt-8 text-lg">
+      <h2 class="mb-3 text-2xl font-bold">Op deze pagina</h2>
+      <div
+        class="grid grid-flow-col grid-cols-[max-content_20px_max-content] grid-rows-[30px_8px_30px_8px]"
+      >
+        <a href="#services" class="mr-2 w-fit">Diensten</a>
+        <div class="border-light-navy ml-5 h-2 w-px border-l"></div>
+        <a href="#about" class="mr-2 w-fit">Over mij</a>
+        <div
+          class="border-light-navy w-20px ml-5 h-2.75 rounded-bl-sm border-b border-l"
+        ></div>
+
+        <div
+          class="row-span-4 grid grid-cols-2 grid-rows-2 justify-self-center"
+        >
+          <div class="mt-3.75 h-8 w-2.5"></div>
+          <div
+            class="border-light-navy mt-3.75 -ml-px h-8 w-2.5 rounded-tl-sm border-t border-l"
+          ></div>
+          <div
+            class="border-light-navy mt-2.25 h-8 w-2.5 rounded-br-sm border-r border-b"
+          ></div>
+          <div class="mt-3.75 h-8 w-2.5"></div>
+        </div>
+
+        <a href="#how" class="ml-2 w-fit">Hoe werk ik</a>
+        <div class="border-light-navy ml-5 h-2 w-px border-l"></div>
+        <a href="#contact" class="ml-2 w-fit">Contact</a>
+      </div>
     </nav>
 
     <section id="services">

@@ -26,5 +26,5 @@
   z-index: -1;
   background: url(../assets/welcome.jpg) center / cover;
   filter: blur(12px);
-  transform: scale(1.1);
+  transform: scale(1.12);
 }

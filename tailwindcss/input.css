@@ -13,18 +13,18 @@
   --font-niramit: "Niramit", sans-serif;
 }
 
-.wlc-bg-small {
+.wlc-bg {
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  background-color: #08224a;
 }
 
-.wlc-bg-small::before {
+.wlc-bg::before {
   content: "";
   position: absolute;
-  inset: -16px;
+  inset: 0;
   z-index: -1;
-  background: url(../assets/welcome.jpg) center top / max(100%, 1300px) auto no-repeat;
-  filter: blur(8px);
+  background: url(../assets/welcome.jpg) center / cover;
+  filter: blur(12px);
+  transform: scale(1.1);
 }

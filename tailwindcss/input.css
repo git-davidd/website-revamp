@@ -24,7 +24,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url(../assets/welcome.jpg) center / cover;
-  filter: blur(12px);
+  background: url(../assets/welcome.png) center / cover;
+  filter: blur(6px);
   transform: scale(1.12);
 }

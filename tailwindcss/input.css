@@ -5,9 +5,27 @@
   --color-light-navy: #17294e;
   --color-very-light-blue: #ccd1d7;
   --color-almost-white: #ececec;
+
+  --font-title: "Cal Sans", sans-serif;
+  --font-sans: "Niramit", sans-serif;
+
+  --font-cal-sans: "Cal Sans", sans-serif;
+  --font-niramit: "Niramit", sans-serif;
 }
 
 .wlc-bg {
-  background-image: url(../assets/welcome.jpg);
-  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.wlc-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url(../assets/welcome.jpg) center / cover;
+  filter: brightness(70%);
+  filter: blur(12px);
+  transform: scale(1.1);
 }

@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-dark-navy
-  --color-light-navy
-  --color-very-light-blue
-  --color-almost-white
+  --color-dark-navy: #161c36;
+  --color-light-navy: #17294e;
+  --color-very-light-blue: #ccd1d7;
+  --color-almost-white: #ececec;
+}
+
+.wlc-bg {
+  background-image: url(../assets/welcome.jpg);
+  background-size: cover;
 }
